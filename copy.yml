@@ -5,6 +5,6 @@
       copy:
         src: /tmp/1.txt
         dest: /etc/testfile.txt
-                owner: root
-                group: root
-                mode: '0644'
+        owner: root
+        group: root
+        mode: '0644'
