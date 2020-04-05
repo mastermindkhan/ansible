@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  vars:
+      list_of_ssh_ports: [2122, 22]
   tasks:
     - name: copy file to remote host
       synchronize: src=/tmp/stam.txt dest=/tmp/stam.txt
