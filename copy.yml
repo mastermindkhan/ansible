@@ -2,7 +2,5 @@
 - hosts: all
   tasks:
     - name: copy file to remote host
-      copy:
-        remote_src: true
-        src: /tmp/1.txt
-        dest: /etc/testfile.txt
+      synchronize: src=/tmp/1.txt dest=/etc/testfile.txt
+      delegate_to: 192.168.1.5
