@@ -1,7 +1,6 @@
-- name: Copy file with owner and permissions
-  copy:
-    src:  /tmp/1.txt
-    dest: /etc/testfile.txt`
-    owner: root
-    group: root
-    mode: '0644'
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
