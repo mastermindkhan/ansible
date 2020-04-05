@@ -1,7 +1,5 @@
 ---
 - hosts: all
-  vars:
-      ansible_port: '2122'
   tasks:
     - name: copy file to remote host
       synchronize: src=/tmp/stam.txt dest=/tmp/stam.txt
