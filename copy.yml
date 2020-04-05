@@ -1,5 +1,7 @@
 ---
 - hosts: all
   tasks:
-      command: cp /tmp/1.txt /etc/testfile.txt
-      creates: /etc/testfile.txt
+    - name: copy file to remote host
+      copy:
+        src: /tmp/1.txt
+        dest: /etc/testfile.txt
