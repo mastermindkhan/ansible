@@ -2,5 +2,8 @@
 - hosts: all
   tasks:
     - name: copy file to remote host
-      synchronize: src=/tmp/1.txt dest=/etc/testfile.txt
+      synchronize: src=/tmp/stam.txt dest=/tmp/stam.txt
       delegate_to: 192.168.1.5
+     - name: Change ssh port to 2122
+      set_fact:
+         ansible_port: 2122
