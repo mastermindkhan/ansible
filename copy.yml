@@ -3,6 +3,7 @@
   tasks:
     - name: copy file to remote host
       copy:
+        source: loopback0
         remote_src: true
         src: /tmp/1.txt
         dest: /etc/testfile.txt
