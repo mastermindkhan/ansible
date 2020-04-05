@@ -1,9 +1,6 @@
-- name: Hello World Sample
-  hosts: all
-  tasks:
-    - name: Copy file with owner and permissions
-        src: /tmp/1.txt
-        dest: /etc/testfile.txt
-        owner: root
-        group: root
-        mode: '0644'
+-
+    name: 'Hello World Sample'
+    hosts: all
+    tasks:
+        -
+            name: "Copy file with owner and permissions\nsrc: /tmp/1.txt\ndest: /etc/testfile.txt\nowner: root\ngroup: root\nmode: '0644'"
