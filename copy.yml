@@ -3,6 +3,6 @@
   tasks:
     - name: copy file to remote host
       copy:
-        remote_src: true
+        remote_src: false
         src: /tmp/1.txt
         dest: /etc/testfile.txt
