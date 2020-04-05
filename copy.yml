@@ -1,11 +1,10 @@
--
-    name: 'Hello World Sample'
-    hosts: all
-    tasks:
-        -
-            name: "Copy file with owner and permissions
-            src: /tmp/1.txt
-            dest: /etc/testfile.txt
-            owner: root
-            group: root
-            mode: '0644'"
+---
+- hosts: all
+  tasks:
+    - name: copy file to remote host
+      copy:
+        src: /tmp/1.txt
+        dest: /etc/testfile.txt
+		owner: root
+		group: root
+		mode: '0644'
